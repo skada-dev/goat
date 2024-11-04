@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap'); */
+
+:root {
+	--background: #0a0a0a;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #0a0a0a;
+	}
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.contract-gradient {
+	background: linear-gradient(
+		180deg,
+		#6b3fa0 -55.9%,
+		#000000 23.51%,
+		#000000 90.11%,
+		#6b3fa0 137.92%
+	);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Cinzel", serif;
+}
+
+body {
+	font-family: "Lora", serif;
+}
+
+
+/* @keyframes moveLeft {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -100% 100;
+	}
+}
+
+.animated-bg {
+	animation: moveLeft 2s linear infinite;
+	background-repeat: repeat-x;
+} */
